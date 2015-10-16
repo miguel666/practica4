@@ -1,0 +1,61 @@
+
+<?php
+
+  $registros = array(
+    0=> array(
+       "id"=> "1",
+       "titulo"=> "HALO",
+       "contenido"=> "CORTANA",
+       "autor"=> "MASTER"
+    ),
+
+    1=> array(
+       "id"=> "2",
+       "titulo"=> "XBOX",
+       "contenido"=> "Es el contenido",
+       "autor"=> "BILL"
+    ),
+
+    2=> array(
+       "id"=> "3",
+       "titulo"=> "JUEGOS",
+       "contenido"=> "CIENCIAS",
+       "autor"=> "MIGUEL"
+    ),
+   
+    3=> array(
+       "id"=> "4",
+       "titulo"=> "LEON",
+       "contenido"=> "ANIMAL",
+       "autor"=> "EDUARDO"
+    ),
+
+    4=> array(
+       "id"=> "5",
+       "titulo"=> "CARRERAS",
+       "contenido"=> "MUCHAS",
+       "autor"=> "PELAYO"
+      )
+    );
+
+  
+?>
+
+
+<?php foreach($registros as $registro){ ?>
+  <div>
+     <h1> <?php echo $registro["titulo"]; ?> </h1>
+   <p>
+      <?php echo $registro["contenido"]; ?> 
+   </p>
+      
+   <div>
+     <?php echo $registro["autor"]; ?>
+
+  </div>
+ </div>
+
+
+
+ <?php } ?>
+    
